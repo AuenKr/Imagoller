@@ -2,7 +2,6 @@ import { useState } from "react"
 import Header from "./components/Header"
 import SearchField from "./components/SearchField"
 import Content from "./components/Content";
-import ImageWrapper from "./components/ImageWrapper";
 
 function App() {
   const [item, setItem] = useState("random");
@@ -10,9 +9,9 @@ function App() {
     <>
       <Header></Header>
       <SearchField setItem={setItem}></SearchField>
-      <Content item={item}></Content>
+      <Content item={item} count={10}></Content>
     </>
   )
 }
 
-export default App
+export default App;

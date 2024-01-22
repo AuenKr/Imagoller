@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import getImages from "./utities/importData"
 import ImageWrapper from "./ImageWrapper";
 
-export default function Content({ item }) {
+export default function Content({ item, count }) {
     const initial = {
         id: "fIq0tET6llw",
         description: "The focus",
@@ -23,7 +23,7 @@ export default function Content({ item }) {
     const [page, setPage] = useState(1);
     useEffect(() => {
         const fetchFunc = async () => {
-            const response = await getImages(item, 5, page)
+            const response = await getImages(item, count, page)
             setImages(response);
         }
         fetchFunc();
