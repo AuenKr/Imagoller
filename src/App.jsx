@@ -5,11 +5,13 @@ import Content from "./components/Content";
 
 function App() {
   const [item, setItem] = useState("beautiful");
+  const count = window.innerWidth >= 1024 ? 12 : 10;
+
   return (
     <>
       <Header></Header>
       <SearchField setItem={setItem}></SearchField>
-      <Content item={item} count={10}></Content>
+      <Content item={item} count={count}></Content>
     </>
   )
 }
