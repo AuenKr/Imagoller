@@ -4,7 +4,7 @@ import SearchField from "./components/SearchField"
 import Content from "./components/Content";
 
 function App() {
-  const [item, setItem] = useState("random");
+  const [item, setItem] = useState("beautiful");
   return (
     <>
       <Header></Header>

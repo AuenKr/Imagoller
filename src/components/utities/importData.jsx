@@ -1,7 +1,7 @@
 import axios from "axios";
 import acessKey from "../../config";
 
-export default async function getImages(item = "random", count = 5, page = 1) {
+export default async function getImages(item = "beautiful", count = 5, page = 1) {
     const images = await getData(item, count, page);
     const requireInfo = images.map((img) => {
         const result = {
