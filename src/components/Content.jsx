@@ -36,7 +36,7 @@ export default function Content({ item, count }) {
                     )
                 })}
             </div>
-            <button onClick={getNextImage} className="text-xl border-2 border-gray-600 rounded-lg hover:bg-slate-200 p-1 text-center">Next</button>
+            <button onClick={getNextImage} className="text-xl border-2 border-gray-600 rounded-lg m-3 p-1 text-center hover:bg-slate-200 shadow-md active:shadow-slate-500">Next</button>
         </div>
     )
 }
